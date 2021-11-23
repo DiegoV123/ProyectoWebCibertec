@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .contenedor{
     width: 100%;
     height: auto;
@@ -16,7 +17,9 @@
     padding: 0 ;
     display: flex;
     align-items: center;
+    z-index: auto;
 }
+
 .logo{
     width: 130px;
     cursor: pointer;
@@ -26,7 +29,7 @@ body {
     font-family: Arial;
     position: relative;
     padding-bottom: 5em;
-    min-height: 100vh;
+    min-height: 190vh;
 }
 .menu {
     list-style: none;
@@ -51,22 +54,423 @@ body {
     background-color: tomato;
 }
 .menu-vertical {
+    z-index: 1;
     position: absolute;
     display: none;
     list-style: none;
     width: 150px;
-    background-color: #0a1a2a;
+    background-color: #0a1a2a;  
+
 }
 .menu li:hover .menu-vertical{
-    display: block ;
+    display: block;
+
 }
+.cuerposimagenes{
+    background-image: url();
+}
+h1{
+    padding: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    align-items: center;
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    align-items: center;
+    padding: 25px;
+}
+/* imagen 1 */
+
+.rectangulo{
+    display:inline-flex;
+    align-items: center;
+    width: 100%;
+    background-color:#0d2033 ;
+    
+}
+.imagen1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+ 
+    }
+    .imagen1 figure{
+       position:relative;
+        height: 250px;
+        cursor: pointer;
+        width: 350px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    }
+    .imagen1 figure img{
+        width: 100%;
+        height: 100%;
+        transition: all 400ms ease-out;
+        will-change: transform;
+    }
+    .imagen1 figure .texto1{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: gainsboro;
+        transition: all 400ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+       text-align: center;
+    }
+    .imagen1 figure:hover > .texto1 {
+        opacity: 1;
+        visibility: visible;
+    }
+    .imagen1 figure:hover > .texto1 h3{
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
+    .imagen1 figure:hover > img{
+        transform: scale(1.3);
+    }
+    .imagen1 figure .texto1 h3{
+        color: black;
+        font-weight: 400;
+        margin-bottom: 120px;
+        transition: all 400ms ease-out;
+         margin-top: 30px;
+    }
+    .imagen1 figure .texto1 p{
+        color: black;
+        font-size: 15px;
+        line-height: 1.5;
+        width: 100%;
+        max-width: 220px;
+        margin: auto;
+    } 
+    /* Imagen 2 */
+    .imagen2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+    }
+    .imagen2 figure{
+        position:relative;
+        height: 250px;
+        cursor: pointer;
+        width: 350px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    }
+    .imagen2 figure img{
+        width: 100%;
+        height: 100%;
+        transition: all 400ms ease-out;
+        will-change: transform;
+    }
+    .imagen2 figure .texto2{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: gainsboro;
+        transition: all 400ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+       text-align: center;
+    }
+    .imagen2 figure:hover > .texto2 {
+        opacity: 1;
+        visibility: visible;
+    }
+    .imagen2 figure:hover > .texto2 h3{
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
+    .imagen2 figure:hover > img{
+        transform: scale(1.3);
+    }
+    .imagen2 figure .texto2 h3{
+        color: black;
+        font-weight: 400;
+        margin-bottom: 120px;
+        transition: all 400ms ease-out;
+         margin-top: 30px;
+    }
+    .imagen2 figure .texto2 p{
+        color: black;
+        font-size: 15px;
+        line-height: 1.5;
+        width: 100%;
+        max-width: 220px;
+        margin: auto;
+    }
+/* Imagen 3 */
+.imagen3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+}
+.imagen3 figure{
+    position:relative;
+    height: 250px;
+    cursor: pointer;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+}
+.imagen3 figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+}
+.imagen3 figure .texto3{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: gainsboro;
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+   text-align: center;
+}
+.imagen3 figure:hover > .texto3 {
+    opacity: 1;
+    visibility: visible;
+}
+.imagen3 figure:hover > .texto3 h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.imagen3 figure:hover > img{
+    transform: scale(1.3);
+}
+.imagen3 figure .texto3 h3{
+    color: black;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+     margin-top: 30px;
+}
+.imagen3 figure .texto3 p{
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+/*Sub imagen 1 */
+.segundosub{
+    padding: 50px;
+}
+.rectangulo2{
+    display:inline-flex;
+    align-items: center;
+    width: 100%;
+    background-color:#0d2033 
+    
+}
+.subimagen1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+ 
+    }
+    .subimagen1 figure{
+       position:relative;
+        height: 200px;
+        cursor: pointer;
+        width: 300px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    }
+    .subimagen1 figure img{
+        width: 100%;
+        height: 100%;
+        transition: all 400ms ease-out;
+        will-change: transform;
+    }
+    .subimagen1 figure .subtexto1{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: gainsboro;
+        transition: all 400ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+       text-align: center;
+    }
+    .subimagen1 figure:hover > .subtexto1 {
+        opacity: 1;
+        visibility: visible;
+    }
+    .subimagen1 figure:hover > .subtexto1 h3{
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
+    .subimagen1 figure:hover > img{
+        transform: scale(1.3);
+    }
+    .subimagen1 figure .subtexto1 h3{
+        color: black;
+        font-weight: 400;
+        margin-bottom: 120px;
+        transition: all 400ms ease-out;
+         margin-top: 30px;
+    }
+    .subimagen1 figure .subtexto1 p{
+        color: black;
+        font-size: 15px;
+        line-height: 1.5;
+        width: 100%;
+        max-width: 220px;
+        margin: auto;
+    } 
+    /* Sub Imagen 2 */
+    .subimagen2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+    }
+    .subimagen2 figure{
+        position:relative;
+        height: 200px;
+        cursor: pointer;
+        width: 300px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    }
+    .subimagen2 figure img{
+        width: 100%;
+        height: 100%;
+        transition: all 400ms ease-out;
+        will-change: transform;
+    }
+    .subimagen2 figure .subtexto2{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: gainsboro;
+        transition: all 400ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+       text-align: center;
+    }
+    .subimagen2 figure:hover > .subtexto2 {
+        opacity: 1;
+        visibility: visible;
+    }
+    .subimagen2 figure:hover > .subtexto2 h3{
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
+    .subimagen2 figure:hover > img{
+        transform: scale(1.3);
+    }
+    .subimagen2 figure .subtexto2 h3{
+        color: black;
+        font-weight: 400;
+        margin-bottom: 120px;
+        transition: all 400ms ease-out;
+         margin-top: 30px;
+    }
+    .subimagen2 figure .subtexto2 p{
+        color: black;
+        font-size: 15px;
+        line-height: 1.5;
+        width: 100%;
+        max-width: 220px;
+        margin: auto;
+    }
+/* Sub Imagen 3 */
+.subimagen3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+}
+.subimagen3 figure{
+    position:relative;
+    height: 200px;
+    cursor: pointer;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+}
+.subimagen3 figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+}
+.subimagen3 figure .subtexto3{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: gainsboro;
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+   text-align: center;
+}
+.subimagen3 figure:hover > .subtexto3 {
+    opacity: 1;
+    visibility: visible;
+}
+.subimagen3 figure:hover > .subtexto3 h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.subimagen3 figure:hover > img{
+    transform: scale(1.3);
+}
+.subimagen3 figure .subtexto3 h3{
+    color: black;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+     margin-top: 30px;
+}
+.subimagen3 figure .subtexto3 p{
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-}
 
 .pie-pagina{
     width: 100%;
@@ -74,6 +478,7 @@ body {
     position: absolute;
     bottom: 0;
     padding: auto;
+    height: auto;
 }
 .pie-pagina .grupo-1{
     width: 100%;
