@@ -74,6 +74,7 @@ body {
     position: absolute;
     bottom: 0;
     padding: auto;
+    height: auto;
 }
 .pie-pagina .grupo-1{
     width: 100%;
@@ -138,4 +139,24 @@ body {
         grid-gap:30px;
         padding: 35px 0px;
     }
+
+
+div.contacto{
+    margin: 20px;
+}
+div.contacto h1{
+    font-size: 50px;
+}
+div.contacto h2{
+    font-size: 30px;
+    margin: 10px;
+}
+div.contacto h4{
+    margin-top: 80px;
+}
+div.contacto ul{
+    margin: 20px 20px 20px 40px;
+}
+div.contacto li{
+    margin: 15px;
 }
