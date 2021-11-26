@@ -10,6 +10,7 @@ body {
     padding-bottom: 5em;
     min-height: 200vh;
 }
+/* Encabezado */
 .contenedor{
     width: 100%;
     height: auto;
@@ -110,9 +111,7 @@ body {
     text-align: center;
     width: 150px;
 }
-.cuerposimagenes{
-    background-image: url();
-}
+/*Titulos */
 h1{
     padding: 30px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -527,7 +526,6 @@ h2{
 }
 .pie-pagina .grupo-1{
     width: 100%;
-   /* max-width: 1000px;*/
     margin: auto;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
